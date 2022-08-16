@@ -3,13 +3,13 @@
 Endpints UD26-1
 ----------------------------------------------------------------
 
-GET ->    /suministros      | /piezas       | /proveedores
+GET ->    /api/suministros      | /api/piezas       | /api/proveedores
 
-GET ->    /suministros/{id} | /piezas/{id}  | /proveedores/{id}
+GET ->    /api/suministros/{id} | /api/piezas/{id}  | /api/proveedores/{id}
 
-POST ->   /suministros      | /piezas       | /proveedores
+POST ->   /api/suministros      | /api/piezas       | /api/proveedores
 
-PUT ->    /suministros/{id} | /piezas/{id}  | /proveedores/{id}
+PUT ->    /api/suministros/{id} | /api/piezas/{id}  | /api/proveedores/{id}
 
-DELETE -> /suministros/{id} | /piezas/{id}  | /proveedores/{id}
+DELETE -> /api/suministros/{id} | /api/piezas/{id}  | /api/proveedores/{id}
 
