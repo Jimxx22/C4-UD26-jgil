@@ -1,5 +1,3 @@
-use ud2601;
-
 drop table if exists suministra;
 drop table if exists piezas;
 drop table if exists proveedores;
@@ -30,4 +28,4 @@ create table suministra(
 
 insert into piezas(nombre)values ('pieza1'),('pieza2'),('pieza3'),('pieza4'),('pieza5');
 insert into proveedores(id,nombre)values ('pv01','proveedor1'),('pv02','proveedor2'),('pv03','proveedor3'),('pv04','proveedor4'),('pv05','proveedor5');
-insert into suministra(codigo_pieza,id_proveedor,precio)values (1,'pv02',100),(2,'pv03',250),(3,'pv02',322),(4,'pv01',174),(1,'pv04',35),(5,'pv05',376);
+insert into suministra(codigo_pieza,id_proveedor,precio)values (1,'pv02',100),(11,'pv03',250),(21,'pv02',322),(31,'pv01',174),(41,'pv04',35);
