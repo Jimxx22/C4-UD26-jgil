@@ -58,7 +58,7 @@ public class PiezaController {
 			piezaServiceImpl.eliminarPieza(id);
 			return "Pieza eliminada";
 		}catch (Exception e) {
-			return "Error: no puedes borrar esta pieza ya que hay pedidos con esta";
+			return "Error: no puedes borrar esta pieza ya que hay pedidos con esta.";
 		}
 		
 	}
