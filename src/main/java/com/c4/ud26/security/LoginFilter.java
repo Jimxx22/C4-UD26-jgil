@@ -1,5 +1,7 @@
 package com.c4.ud26.security;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -7,8 +9,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class LoginFilter extends AbstractAuthenticationProcessingFilter{
 
-    public LoginFilter(String url, AuthenticationManager authManager) {
+	public LoginFilter(String url, AuthenticationManager authManager) {
         super(new AntPathRequestMatcher(url));
         setAuthenticationManager(authManager);
     }
